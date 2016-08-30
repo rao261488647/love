@@ -3,16 +3,19 @@
 <head>
 <meta charset="utf-8">
 <title>无标题文档</title>
- <link href="D:\workspace\dw_wp\love\plugins\videojs\video-js.css" rel="stylesheet">
+ <link href="plugins\videojs\video-js.css" rel="stylesheet">
 </head>
 
+<video id="video" class="video-js vjs-default-skin vjs-big-play-centered"  
+  controls preload="auto" width="1300px" height="800px"
+  poster="img/pure-black.jpg" data-setup=''>
+  <source src="video/my_video.mp4" type='video/mp4' />
+  <source src="video/my_video.webm" type='video/webm' />
+  <source src="video/my_video.ogv" type='video/ogg' />
+ <p class="vjs-no-js">播放视频需要启用 JavaScript，推荐使用支持HTML5的浏览器访问。</p>
+</video>  
 
-	<video id="my-video" class="video-js" controls preload="auto" width="640" height="264" >
-
-	<source src="D:\workspace\dw_wp\love\video\my_video.mp4" type='video/mp4' />
-  </video>
-
-  <script src="D:\workspace\dw_wp\love\plugins\videojs\video.js"></script>
+ <script src="plugins/videojs/video.min.js"></script>
 
 <body>
 </body>
