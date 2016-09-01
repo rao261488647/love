@@ -8,7 +8,7 @@
 
 <video id="video" class="video-js vjs-default-skin vjs-big-play-centered"  
   controls preload="auto" width="1300px" height="800px"
-  poster="img/pure-black.jpg" data-setup=''>
+  poster="img/1.jpg" data-setup=''>
   <source src="video/my_video.mp4" type='video/mp4' />
   <source src="video/my_video.webm" type='video/webm' />
   <source src="video/my_video.ogv" type='video/ogg' />
@@ -20,3 +20,19 @@
 <body>
 </body>
 </html>
+<script>
+var player = videojs('video');  
+// 检测播放时间
+player.on('timeupdate', function () {  
+});
+// 开始或恢复播放
+player.on('play', function() {  
+  console.log('开始/恢复播放');
+});
+// 暂停播放
+player.on('pause', function() {  
+  console.log('暂停播放');
+  alert("Are U Ready? Now，我们开始吧！");
+  window.location.href="second.html";
+});
+</script>
